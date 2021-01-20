@@ -37,17 +37,16 @@ class MainActivity : AppCompatActivity(), Callback {
             Item(it.title, it.author, it.date, it.source, it.enclosure.url)
         }
 
-        adapter = ItemAdapter(listItens, this)
         adapter.notifyDataSetChanged()
 
     }
 
     override fun onPreload() {
-        TODO("Not yet implemented")
+
     }
 
     override fun onLoadFailed() {
-        TODO("Not yet implemented")
+
     }
 
     data class Item(val titulo: String, val autor: String, val data: Long, val link: Uri, val imagem: String)
